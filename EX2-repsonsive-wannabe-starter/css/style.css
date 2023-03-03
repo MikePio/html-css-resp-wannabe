@@ -128,12 +128,7 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-/*
-- tablet: dai 768px in giù
-- mobile: dai 480px in giù
- Sopra i 768px e fino ai 1160px il layout è un po’ troppo *“rigido”*! Come mai? :faccia_pensosa:
-*Aggiungiamo una media query per sistemare il layout e non far comparire la scrollbar orizzontale.
-*/
+/* ! tablet: dai 768px in giù */
 
 @media screen and (max-width: 768px) {
     
@@ -142,23 +137,144 @@ img {
         /* * funziona lo stesso ma è preferibile quello di sopra*/
         /* width: 768px; */
     }
-
+    
     .container{
+        /* di default */
+        /* width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px; */
+
         width: 100%;
     }
-    
+
 }
 
-
-
-
+/* ! mobile: dai 480px in giù */
 
 @media screen and (max-width: 480px) {
     
+    header h1{
+        /* di default */
+        /* margin-bottom: 3rem;
+        font-size: 2.5rem; */
+        
+        font-size: 3.2rem; 
+    }
+    
+    h2{
+        /* di default */
+        /* margin-bottom: 2.5rem;
+        font-size: 2rem;
+        color: #fffffe; */
+        
+        font-size: 2.6rem;
+    }
+    
+    .row{
+        /* di default */
+        /* display: flex; */
+        
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .col {
+        /* di default */
+        /*
+        padding-left: 1rem;
+        padding-right: 1rem;
+        */
+
+        margin-bottom: 3rem;
+    }
+
+    p{
+        font-size: 19px;
+    }
+    
+    /* * lessons section ////////////////////////////////////////////////////////////////// */
+    .lessons{
+        padding-bottom: 3rem;
+    }
+
+    .lessons .col{
+        /* di default */
+        /* width: 50%; */
+        
+        width: 90%;
+        /* width: 100vw; */
+    }
+    
+    .lessons .col img {
+        /* di default */
+        /*
+        height: 200px;
+        margin-bottom: 1rem;
+        */
+        
+        height: auto;
+        width: 68vw;
+    }
     
     
+    /* * steps section ////////////////////////////////////////////////////////////////// */
+    .steps {
+        /* di default */
+        /* margin: 3rem 0;
+        padding: 3rem 0;
+        color: #232946;
+        background: #eebbc3; */
+        
+        margin: 0rem 0;
+        
+    }
+    
+    .steps .col img {
+        /* di default */
+        /*
+        height: 200px;
+        margin-bottom: 1rem;
+        */
+        
+        height: auto;
+        width: 68vw;
+    }
+    
+    .steps .col{
+        
+        /* di default */
+        /* width: calc(100% / 3); */
+        
+        width: 90%;
+        /* width: 100vw; */
+    }
+    
+    /* * section why-us ////////////////////////////////////////////////////////////////// */
+    .why-us{
+        /* di default */
+        /* margin-bottom: 3rem; */
+        
+        background-color: #222222;
+        padding: 3rem 0;
+        margin-bottom: 0;
+    }
+    
+    .why-us .col-left {
+        width: 80%;
+    }
+    
+    .why-us .col-right {
+        width: 100%;
+    }
+
 }
 
+/*
+Sopra i 768px e fino ai 1160px il layout è un po’ troppo *“rigido”*! Come mai? :faccia_pensosa:
+*Aggiungiamo una media query per sistemare il layout e non far comparire la scrollbar orizzontale.
+*/
 
 /* * BONUS */
 @media screen and (max-width: 1160px) and (min-width: 769px){
@@ -166,6 +282,10 @@ img {
     
     
 }
+
+
+
+
 
 
 
